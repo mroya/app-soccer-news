@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="dio.me.soccernews">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
