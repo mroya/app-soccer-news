@@ -14,11 +14,14 @@
             android:id="@+id/ivThumbnail"
             android:layout_width="0dp"
             android:layout_height="@dimen/news_image_height"
+            android:layout_marginBottom="16dp"
             android:contentDescription="@string/cd_news_image"
-            android:src="@color/black"
+            android:src="@color/teal_200"
+            app:layout_constraintBottom_toTopOf="@+id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
         <TextView
@@ -67,6 +70,10 @@
             android:layout_marginEnd="52dp"
             android:layout_marginBottom="8dp"
             android:contentDescription="@string/cd_favorite_icon"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
@@ -74,12 +81,17 @@
             app:srcCompat="@drawable/ic_favorite"
             tools:ignore="HardcodedText" />
 
+
         <ImageView
             android:id="@+id/ivShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/default_margin"
             android:contentDescription="@string/cd_share_icon"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/ivFavorite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/ivFavorite"
