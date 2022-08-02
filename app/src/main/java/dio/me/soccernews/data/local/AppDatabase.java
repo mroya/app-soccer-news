@@ -1,2 +1,11 @@
-package dio.me.soccernews.data.local;public class AppDatabase {
+package dio.me.soccernews.data.local;
+
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
+
+import dio.me.soccernews.domain.News;
+
+@Database(entities = {News.class}, version = 1)
+public abstract class AppDatabase extends RoomDatabase {
+    public abstract NewsDao newsDao();
 }

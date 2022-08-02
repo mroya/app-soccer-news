@@ -40,12 +40,16 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.5.1'
     implementation 'androidx.navigation:navigation-ui:2.5.1'
 
-    // https://github.com/square/retrofit
+    //References: https://github.com/square/retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
-    // https://github.com/square/picasso
+    //References: https://github.com/square/picasso
     implementation 'com.squareup.picasso:picasso:2.8'
+
+    //References: https://developer.android.com/training/data-storage/room
+    implementation "androidx.room:room-runtime:2.4.3"
+    annotationProcessor "androidx.room:room-compiler:2.4.3"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
